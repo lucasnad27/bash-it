@@ -8,7 +8,7 @@ autoenv_env > /dev/null 2>&1
 export AUTOENV=$?
 
 [[ `which pyenv` ]] && eval "$(pyenv init -)"
-[[ `which pyenv-virtualenvwrapper` ]] && eval "$(pyenv virtualenvwrapper)"
+[[ `which pyenv-virtualenvwrapper` ]] && pyenv virtualenvwrapper
 
 # Activate autoenv
 source /usr/local/opt/autoenv/activate.sh
